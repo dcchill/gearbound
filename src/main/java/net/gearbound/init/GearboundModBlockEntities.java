@@ -37,6 +37,13 @@ import net.gearbound.GearboundMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class GearboundModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, GearboundMod.MODID);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BRASS_BACKPACK = REGISTRY.register("brass_backpack",
+			() -> BlockEntityType.Builder.of(BrownBrassBackpackBlockEntity::new, GearboundModBlocks.WHITE_BRASS_BACKPACK.get(), GearboundModBlocks.LIGHT_GRAY_BRASS_BACKPACK.get(), GearboundModBlocks.GRAY_BRASS_BACKPACK.get(),
+					GearboundModBlocks.BLACK_BRASS_BACKPACK.get(), GearboundModBlocks.BROWN_BRASS_BACKPACK.get(), GearboundModBlocks.RED_BRASS_BACKPACK.get(), GearboundModBlocks.ORANGE_BRASS_BACKPACK.get(),
+					GearboundModBlocks.YELLOW_BRASS_BACKPACK.get(), GearboundModBlocks.LIME_BRASS_BACKPACK.get(), GearboundModBlocks.GREEN_BRASS_BACKPACK.get(), GearboundModBlocks.CYAN_BRASS_BACKPACK.get(),
+					GearboundModBlocks.LIGHT_BLUE_BRASS_BACKPACK.get(), GearboundModBlocks.BLUE_BRASS_BACKPACK.get(), GearboundModBlocks.PURPLE_BRASS_BACKPACK.get(), GearboundModBlocks.MAGENTA_BRASS_BACKPACK.get(),
+					GearboundModBlocks.PINK_BRASS_BACKPACK.get()).build(null));
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BROWN_BRASS_BACKPACK = BRASS_BACKPACK;
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> WHITE_BRASS_BACKPACK = register("white_brass_backpack", GearboundModBlocks.WHITE_BRASS_BACKPACK, WhiteBrassBackpackBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> LIGHT_GRAY_BRASS_BACKPACK = register("light_gray_brass_backpack", GearboundModBlocks.LIGHT_GRAY_BRASS_BACKPACK, LightGrayBrassBackpackBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> GRAY_BRASS_BACKPACK = register("gray_brass_backpack", GearboundModBlocks.GRAY_BRASS_BACKPACK, GrayBrassBackpackBlockEntity::new);
@@ -62,6 +69,7 @@ public class GearboundModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WHITE_BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LIGHT_GRAY_BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GRAY_BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));

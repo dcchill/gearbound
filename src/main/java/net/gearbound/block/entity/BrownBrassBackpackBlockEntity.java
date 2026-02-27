@@ -2,6 +2,7 @@ package net.gearbound.block.entity;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
@@ -15,6 +16,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.gearbound.world.inventory.BrassBackpackGUIMenu;
 import net.gearbound.init.GearboundModBlockEntities;
@@ -22,6 +24,8 @@ import net.gearbound.init.GearboundModBlockEntities;
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+import java.util.Locale;
+import java.util.function.Supplier;
 
 import io.netty.buffer.Unpooled;
 
@@ -29,7 +33,38 @@ public class BrownBrassBackpackBlockEntity extends RandomizableContainerBlockEnt
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(36, ItemStack.EMPTY);
 
 	public BrownBrassBackpackBlockEntity(BlockPos position, BlockState state) {
-		super(GearboundModBlockEntities.BROWN_BRASS_BACKPACK.get(), position, state);
+		super(resolveType(state), position, state);
+	}
+
+	private static BlockEntityType<?> resolveType(BlockState state) {
+		String blockPath = BuiltInRegistries.BLOCK.getKey(state.getBlock()).getPath().toUpperCase(Locale.ROOT);
+		BlockEntityType<?> byColor = typeFromField(blockPath);
+		if (byColor != null)
+			return byColor;
+
+		BlockEntityType<?> shared = typeFromField("BRASS_BACKPACK");
+		if (shared != null)
+			return shared;
+
+		BlockEntityType<?> brown = typeFromField("BROWN_BRASS_BACKPACK");
+		if (brown != null)
+			return brown;
+
+		throw new IllegalStateException("Unable to resolve block entity type for " + BuiltInRegistries.BLOCK.getKey(state.getBlock()));
+	}
+
+	private static BlockEntityType<?> typeFromField(String fieldName) {
+		try {
+			var field = GearboundModBlockEntities.class.getField(fieldName);
+			Object holder = field.get(null);
+			if (holder instanceof Supplier<?> supplier) {
+				Object value = supplier.get();
+				if (value instanceof BlockEntityType<?> type)
+					return type;
+			}
+		} catch (ReflectiveOperationException ignored) {
+		}
+		return null;
 	}
 
 	@Override
