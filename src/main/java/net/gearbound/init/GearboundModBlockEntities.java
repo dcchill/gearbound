@@ -22,7 +22,13 @@ import net.gearbound.GearboundMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class GearboundModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, GearboundMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BROWN_BRASS_BACKPACK = register("brown_brass_backpack", GearboundModBlocks.BROWN_BRASS_BACKPACK, BrownBrassBackpackBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BRASS_BACKPACK = REGISTRY.register("brass_backpack",
+			() -> BlockEntityType.Builder.of(BrownBrassBackpackBlockEntity::new, GearboundModBlocks.WHITE_BRASS_BACKPACK.get(), GearboundModBlocks.LIGHT_GRAY_BRASS_BACKPACK.get(), GearboundModBlocks.GRAY_BRASS_BACKPACK.get(),
+					GearboundModBlocks.BLACK_BRASS_BACKPACK.get(), GearboundModBlocks.BROWN_BRASS_BACKPACK.get(), GearboundModBlocks.RED_BRASS_BACKPACK.get(), GearboundModBlocks.ORANGE_BRASS_BACKPACK.get(),
+					GearboundModBlocks.YELLOW_BRASS_BACKPACK.get(), GearboundModBlocks.LIME_BRASS_BACKPACK.get(), GearboundModBlocks.GREEN_BRASS_BACKPACK.get(), GearboundModBlocks.CYAN_BRASS_BACKPACK.get(),
+					GearboundModBlocks.LIGHT_BLUE_BRASS_BACKPACK.get(), GearboundModBlocks.BLUE_BRASS_BACKPACK.get(), GearboundModBlocks.PURPLE_BRASS_BACKPACK.get(), GearboundModBlocks.MAGENTA_BRASS_BACKPACK.get(),
+					GearboundModBlocks.PINK_BRASS_BACKPACK.get()).build(null));
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BROWN_BRASS_BACKPACK = BRASS_BACKPACK;
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -32,6 +38,6 @@ public class GearboundModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BROWN_BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BRASS_BACKPACK.get(), (blockEntity, side) -> new SidedInvWrapper((WorldlyContainer) blockEntity, side));
 	}
 }

@@ -1,24 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "BrownBrassBackpack",
-      "type": "block",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "brown_brass_backpack",
-      "metadata": {
-        "files": [
-          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
-          "src/main/resources/assets/gearbound/models/item/brown_brass_backpack.json",
-          "src/main/resources/assets/gearbound/models/block/brown_brass_backpack.json",
-          "src/main/resources/assets/gearbound/blockstates/brown_brass_backpack.json",
-          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
-          "src/main/resources/data/gearbound/loot_table/blocks/brown_brass_backpack.json"
-        ]
-      },
-      "path": "~/brass backpacks"
-    },
-    {
       "name": "CreateGearboundMenu",
       "type": "tab",
       "compiles": true,
@@ -43,6 +25,350 @@
       "path": "~/brass backpacks"
     },
     {
+      "name": "WhiteBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/white_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/white_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/white_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/white_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightGrayBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/light_gray_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/light_gray_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/light_gray_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/light_gray_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GrayBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/gray_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/gray_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/gray_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/gray_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlackBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/black_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/black_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/black_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/black_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BrownBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/brown_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/brown_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/brown_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/brown_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "RedBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/red_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/red_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/red_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/red_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "OrangeBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/orange_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/orange_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/orange_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/orange_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "YellowBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/yellow_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/yellow_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/yellow_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/yellow_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LimeBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/lime_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/lime_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/lime_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/lime_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GreenBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/green_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/green_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/green_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/green_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "CyanBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/cyan_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/cyan_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/cyan_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/cyan_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightBlueBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/light_blue_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/light_blue_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/light_blue_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/light_blue_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlueBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/blue_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/blue_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/blue_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/blue_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PurpleBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/purple_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/purple_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/purple_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/purple_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "MagentaBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/magenta_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/magenta_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/magenta_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/magenta_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PinkBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/pink_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/pink_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/pink_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/pink_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "WhiteBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/white_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightGrayBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/light_gray_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GrayBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/gray_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlackBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/black_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
       "name": "BrownBrassBackpackItem",
       "type": "item",
       "compiles": true,
@@ -52,6 +378,212 @@
         "files": [
           "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
           "src/main/resources/assets/gearbound/models/item/brown_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "RedBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/red_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "OrangeBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/orange_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "YellowBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/yellow_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LimeBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/lime_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GreenBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/green_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "CyanBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/cyan_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightBlueBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/light_blue_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlueBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/blue_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PurpleBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/purple_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "MagentaBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/magenta_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PinkBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/pink_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "WhiteBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightGrayBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_gray_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GrayBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gray_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlackBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
         ]
       },
       "path": "~/brass backpacks"
@@ -68,23 +600,226 @@
         ]
       },
       "path": "~/brass backpacks"
+    },
+    {
+      "name": "RedBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "OrangeBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "YellowBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LimeBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "GreenBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "CyanBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "LightBlueBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BlueBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PurpleBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "MagentaBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "PinkBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:mod:backpacks": [
-      "CUSTOM:BrownBrassBackpack"
+      "CUSTOM:WhiteBrassBackpack",
+      "CUSTOM:LightGrayBrassBackpack",
+      "CUSTOM:GrayBrassBackpack",
+      "CUSTOM:BlackBrassBackpack",
+      "CUSTOM:BrownBrassBackpack",
+      "CUSTOM:RedBrassBackpack",
+      "CUSTOM:OrangeBrassBackpack",
+      "CUSTOM:YellowBrassBackpack",
+      "CUSTOM:LimeBrassBackpack",
+      "CUSTOM:GreenBrassBackpack",
+      "CUSTOM:CyanBrassBackpack",
+      "CUSTOM:LightBlueBrassBackpack",
+      "CUSTOM:BlueBrassBackpack",
+      "CUSTOM:PurpleBrassBackpack",
+      "CUSTOM:MagentaBrassBackpack",
+      "CUSTOM:PinkBrassBackpack"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.gearbound.brown_brass_backpack": "Brown Brass Backpack",
       "item_group.gearbound.create_gearbound_menu": "Create: Gearbound",
-      "block.gearbound.brown_brass_backpack": "Brown Brass Backpack",
       "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack",
-      "item.gearbound.brown_brass_backpack_item": "Brown Brass Backpack Item"
+      "item.gearbound.white_brass_backpack": "White Brass Backpack",
+      "block.gearbound.white_brass_backpack": "White Brass Backpack",
+      "item.gearbound.white_brass_backpack_item": "White Brass Backpack Item",
+      "item.gearbound.light_gray_brass_backpack": "Light Gray Brass Backpack",
+      "block.gearbound.light_gray_brass_backpack": "Light Gray Brass Backpack",
+      "item.gearbound.light_gray_brass_backpack_item": "Light Gray Brass Backpack Item",
+      "item.gearbound.gray_brass_backpack": "Gray Brass Backpack",
+      "block.gearbound.gray_brass_backpack": "Gray Brass Backpack",
+      "item.gearbound.gray_brass_backpack_item": "Gray Brass Backpack Item",
+      "item.gearbound.black_brass_backpack": "Black Brass Backpack",
+      "block.gearbound.black_brass_backpack": "Black Brass Backpack",
+      "item.gearbound.black_brass_backpack_item": "Black Brass Backpack Item",
+      "item.gearbound.brown_brass_backpack": "Brown Brass Backpack",
+      "block.gearbound.brown_brass_backpack": "Brown Brass Backpack",
+      "item.gearbound.brown_brass_backpack_item": "Brown Brass Backpack Item",
+      "item.gearbound.red_brass_backpack": "Red Brass Backpack",
+      "block.gearbound.red_brass_backpack": "Red Brass Backpack",
+      "item.gearbound.red_brass_backpack_item": "Red Brass Backpack Item",
+      "item.gearbound.orange_brass_backpack": "Orange Brass Backpack",
+      "block.gearbound.orange_brass_backpack": "Orange Brass Backpack",
+      "item.gearbound.orange_brass_backpack_item": "Orange Brass Backpack Item",
+      "item.gearbound.yellow_brass_backpack": "Yellow Brass Backpack",
+      "block.gearbound.yellow_brass_backpack": "Yellow Brass Backpack",
+      "item.gearbound.yellow_brass_backpack_item": "Yellow Brass Backpack Item",
+      "item.gearbound.lime_brass_backpack": "Lime Brass Backpack",
+      "block.gearbound.lime_brass_backpack": "Lime Brass Backpack",
+      "item.gearbound.lime_brass_backpack_item": "Lime Brass Backpack Item",
+      "item.gearbound.green_brass_backpack": "Green Brass Backpack",
+      "block.gearbound.green_brass_backpack": "Green Brass Backpack",
+      "item.gearbound.green_brass_backpack_item": "Green Brass Backpack Item",
+      "item.gearbound.cyan_brass_backpack": "Cyan Brass Backpack",
+      "block.gearbound.cyan_brass_backpack": "Cyan Brass Backpack",
+      "item.gearbound.cyan_brass_backpack_item": "Cyan Brass Backpack Item",
+      "item.gearbound.light_blue_brass_backpack": "Light Blue Brass Backpack",
+      "block.gearbound.light_blue_brass_backpack": "Light Blue Brass Backpack",
+      "item.gearbound.light_blue_brass_backpack_item": "Light Blue Brass Backpack Item",
+      "item.gearbound.blue_brass_backpack": "Blue Brass Backpack",
+      "block.gearbound.blue_brass_backpack": "Blue Brass Backpack",
+      "item.gearbound.blue_brass_backpack_item": "Blue Brass Backpack Item",
+      "item.gearbound.purple_brass_backpack": "Purple Brass Backpack",
+      "block.gearbound.purple_brass_backpack": "Purple Brass Backpack",
+      "item.gearbound.purple_brass_backpack_item": "Purple Brass Backpack Item",
+      "item.gearbound.magenta_brass_backpack": "Magenta Brass Backpack",
+      "block.gearbound.magenta_brass_backpack": "Magenta Brass Backpack",
+      "item.gearbound.magenta_brass_backpack_item": "Magenta Brass Backpack Item",
+      "item.gearbound.pink_brass_backpack": "Pink Brass Backpack",
+      "block.gearbound.pink_brass_backpack": "Pink Brass Backpack",
+      "item.gearbound.pink_brass_backpack_item": "Pink Brass Backpack Item"
     }
   },
   "metadata": {
