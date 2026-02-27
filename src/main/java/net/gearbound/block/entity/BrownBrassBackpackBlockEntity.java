@@ -73,7 +73,7 @@ public class BrownBrassBackpackBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("brown_brass_backpack");
+		return this.getBlockState().getBlock().getName();
 	}
 
 	@Override
@@ -83,7 +83,7 @@ public class BrownBrassBackpackBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Brown Brass Backpack");
+		return this.getBlockState().getBlock().getName();
 	}
 
 	@Override

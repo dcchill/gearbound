@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -20,9 +21,18 @@ import io.netty.buffer.Unpooled;
 import net.gearbound.init.GearboundModBlocks;
 import net.gearbound.world.inventory.BrassBackpackGUIMenu;
 
+import java.util.function.Supplier;
+
 public class BrownBrassBackpackItemItem extends BlockItem {
+	private final Component displayName;
+
 	public BrownBrassBackpackItemItem() {
-		super(GearboundModBlocks.BROWN_BRASS_BACKPACK.get(), new Properties().stacksTo(1));
+		this(GearboundModBlocks.BROWN_BRASS_BACKPACK, "Brown Brass Backpack");
+	}
+
+	public BrownBrassBackpackItemItem(Supplier<? extends Block> blockSupplier, String displayName) {
+		super(blockSupplier.get(), new Properties().stacksTo(1));
+		this.displayName = Component.literal(displayName);
 	}
 
 	@Override
@@ -36,7 +46,7 @@ public class BrownBrassBackpackItemItem extends BlockItem {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Brown Brass Backpack");
+					return displayName;
 				}
 
 				@Override
