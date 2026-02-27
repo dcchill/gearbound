@@ -25,6 +25,7 @@ import net.minecraft.world.item.ItemStack;
 import javax.annotation.Nullable;
 
 import net.gearbound.block.entity.BrownBrassBackpackBlockEntity;
+import net.gearbound.init.GearboundModItems;
 
 public class BrownBrassBackpackBlock extends Block implements EntityBlock {
 
@@ -88,7 +89,7 @@ public void onRemove(BlockState state, Level world,
 
         if (!world.isClientSide && be instanceof BrownBrassBackpackBlockEntity backpack) {
 
-            ItemStack stack = new ItemStack(this);
+            ItemStack stack = new ItemStack(GearboundModItems.BROWN_BRASS_BACKPACK_ITEM.get());
 
             backpack.saveToItem(stack, world.registryAccess());
 
