@@ -1,7 +1,8 @@
 {
   "parent": "gearbound:custom/backpack",
   "textures": {
-    "0": "gearbound:block/backpack_texture",
-    "particle": "minecraft:item/bundle_filled"
+    "0": "gearbound:block/lime_backpack_texture",
+    "particle": "gearbound:block/lime_backpack_texture",
+    "all": "gearbound:block/lime_backpack_texture"
   }
 }

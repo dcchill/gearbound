@@ -1,9 +1,9 @@
 {
   "parent": "gearbound:custom/backpack",
   "textures": {
-    "all": "minecraft:block/pink_wool",
-    "particle": "minecraft:block/pink_wool",
-    "0": "gearbound:block/backpack_texture"
+    "all": "gearbound:block/pink_backpack_texture",
+    "particle": "gearbound:block/pink_backpack_texture",
+    "0": "gearbound:block/pink_backpack_texture"
   },
   "render_type": "solid"
 }
