@@ -26,14 +26,26 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("gearbound:textures/entities/backpack_e_texture.png");
-	private final HumanoidModel humanoidModel;
+	private final HumanoidModel<LivingEntity> humanoidModel;
 
 	public BrownBrassBackpackCuriosRenderer() {
-		Modelbackpack model = new Modelbackpack(Minecraft.getInstance().getEntityModels().bakeLayer(Modelbackpack.LAYER_LOCATION));
-		this.humanoidModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-				Map.of("hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", model.backpack, "left_arm",
+		ModelPart bakedRoot = Minecraft.getInstance().getEntityModels().bakeLayer(Modelbackpack.LAYER_LOCATION);
+		ModelPart backpackBody = resolveBackpackBody(bakedRoot);
+
+		this.humanoidModel = new HumanoidModel<LivingEntity>(new ModelPart(Collections.emptyList(),
+				Map.of("hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", backpackBody, "left_arm",
 						new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 						"right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+	}
+
+	private static ModelPart resolveBackpackBody(ModelPart root) {
+		if (root.hasChild("backpack"))
+			return root.getChild("backpack");
+		if (root.hasChild("bb_main"))
+			return root.getChild("bb_main");
+		if (root.hasChild("bone"))
+			return root.getChild("bone");
+		return root;
 	}
 
 	@Override

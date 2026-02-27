@@ -32,7 +32,6 @@ import net.gearbound.init.GearboundModCuriosRenderers;
 import net.gearbound.init.GearboundModCuriosCompat;
 import net.gearbound.init.GearboundModBlocks;
 import net.gearbound.init.GearboundModBlockEntities;
-import net.gearbound.event.BackpackItemUseHandler;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -48,7 +47,6 @@ public class GearboundMod {
 
 	public GearboundMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
-		BackpackItemUseHandler.register();
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
