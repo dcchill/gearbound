@@ -8,7 +8,22 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.gearbound.block.YellowBrassBackpackBlock;
+import net.gearbound.block.WhiteBrassBackpackBlock;
+import net.gearbound.block.RedBrassBackpackBlock;
+import net.gearbound.block.PurpleBrassBackpackBlock;
+import net.gearbound.block.PinkBrassBackpackBlock;
+import net.gearbound.block.OrangeBrassBackpackBlock;
+import net.gearbound.block.MagentaBrassBackpackBlock;
+import net.gearbound.block.LimeBrassBackpackBlock;
+import net.gearbound.block.LightGrayBrassBackpackBlock;
+import net.gearbound.block.LightBlueBrassBackpackBlock;
+import net.gearbound.block.GreenBrassBackpackBlock;
+import net.gearbound.block.GrayBrassBackpackBlock;
+import net.gearbound.block.CyanBrassBackpackBlock;
 import net.gearbound.block.BrownBrassBackpackBlock;
+import net.gearbound.block.BlueBrassBackpackBlock;
+import net.gearbound.block.BlackBrassBackpackBlock;
 import net.gearbound.GearboundMod;
 
 public class GearboundModBlocks {

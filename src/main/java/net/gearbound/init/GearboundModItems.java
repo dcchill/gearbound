@@ -11,7 +11,22 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.gearbound.item.YellowBrassBackpackItemItem;
+import net.gearbound.item.WhiteBrassBackpackItemItem;
+import net.gearbound.item.RedBrassBackpackItemItem;
+import net.gearbound.item.PurpleBrassBackpackItemItem;
+import net.gearbound.item.PinkBrassBackpackItemItem;
+import net.gearbound.item.OrangeBrassBackpackItemItem;
+import net.gearbound.item.MagentaBrassBackpackItemItem;
+import net.gearbound.item.LimeBrassBackpackItemItem;
+import net.gearbound.item.LightGrayBrassBackpackItemItem;
+import net.gearbound.item.LightBlueBrassBackpackItemItem;
+import net.gearbound.item.GreenBrassBackpackItemItem;
+import net.gearbound.item.GrayBrassBackpackItemItem;
+import net.gearbound.item.CyanBrassBackpackItemItem;
 import net.gearbound.item.BrownBrassBackpackItemItem;
+import net.gearbound.item.BlueBrassBackpackItemItem;
+import net.gearbound.item.BlackBrassBackpackItemItem;
 import net.gearbound.GearboundMod;
 
 public class GearboundModItems {

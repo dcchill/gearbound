@@ -4,7 +4,22 @@ import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
+import net.gearbound.client.renderer.YellowBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.WhiteBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.RedBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.PurpleBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.PinkBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.OrangeBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.MagentaBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.LimeBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.LightGrayBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.LightBlueBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.GreenBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.GrayBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.CyanBrassBackpackCuriosRenderer;
 import net.gearbound.client.renderer.BrownBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.BlueBrassBackpackCuriosRenderer;
+import net.gearbound.client.renderer.BlackBrassBackpackCuriosRenderer;
 
 public class GearboundModCuriosRenderers {
 	public static void registerRenderers(FMLClientSetupEvent event) {

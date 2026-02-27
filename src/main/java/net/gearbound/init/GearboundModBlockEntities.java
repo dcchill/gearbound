@@ -16,7 +16,22 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.gearbound.block.entity.YellowBrassBackpackBlockEntity;
+import net.gearbound.block.entity.WhiteBrassBackpackBlockEntity;
+import net.gearbound.block.entity.RedBrassBackpackBlockEntity;
+import net.gearbound.block.entity.PurpleBrassBackpackBlockEntity;
+import net.gearbound.block.entity.PinkBrassBackpackBlockEntity;
+import net.gearbound.block.entity.OrangeBrassBackpackBlockEntity;
+import net.gearbound.block.entity.MagentaBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LimeBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LightGrayBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LightBlueBrassBackpackBlockEntity;
+import net.gearbound.block.entity.GreenBrassBackpackBlockEntity;
+import net.gearbound.block.entity.GrayBrassBackpackBlockEntity;
+import net.gearbound.block.entity.CyanBrassBackpackBlockEntity;
 import net.gearbound.block.entity.BrownBrassBackpackBlockEntity;
+import net.gearbound.block.entity.BlueBrassBackpackBlockEntity;
+import net.gearbound.block.entity.BlackBrassBackpackBlockEntity;
 import net.gearbound.GearboundMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
