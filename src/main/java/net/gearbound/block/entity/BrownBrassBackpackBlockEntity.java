@@ -28,9 +28,9 @@ import io.netty.buffer.Unpooled;
 public class BrownBrassBackpackBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(36, ItemStack.EMPTY);
 
-	public BrownBrassBackpackBlockEntity(BlockPos position, BlockState state) {
-		super(GearboundModBlockEntities.BROWN_BRASS_BACKPACK.get(), position, state);
-	}
+		public BrownBrassBackpackBlockEntity(BlockPos position, BlockState state) {
+		    super(GearboundModBlockEntities.BROWN_BRASS_BACKPACK.get(), position, state);
+		}
 
 	@Override
 	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
