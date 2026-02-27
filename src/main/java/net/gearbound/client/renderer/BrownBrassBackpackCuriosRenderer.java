@@ -1,31 +1,33 @@
 package net.gearbound.client.renderer;
 
-import top.theillusivec4.curios.api.client.ICurioRenderer;
 import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.entity.RenderLayerParent;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 
+import net.gearbound.GearboundMod;
 import net.gearbound.client.model.Modelbackpack;
 
-import java.util.Map;
 import java.util.Collections;
+import java.util.Map;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 
 public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("gearbound:textures/entities/backpack_e_texture.png");
+	private static final String SUFFIX = "_brass_backpack_item";
 	private final HumanoidModel<LivingEntity> humanoidModel;
 
 	public BrownBrassBackpackCuriosRenderer() {
@@ -48,6 +50,15 @@ public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
 		return root;
 	}
 
+	private static ResourceLocation resolveTexture(ItemStack stack) {
+		String path = BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath();
+		if (!path.endsWith(SUFFIX))
+			return ResourceLocation.fromNamespaceAndPath(GearboundMod.MODID, "textures/entities/backpack_e_texture.png");
+		String color = path.substring(0, path.length() - SUFFIX.length());
+		String textureName = color.equals("brown") ? "backpack_e_texture" : color + "_backpack_e_texture";
+		return ResourceLocation.fromNamespaceAndPath(GearboundMod.MODID, "textures/entities/" + textureName + ".png");
+	}
+
 	@Override
 	public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack stack, SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer, int light, float limbSwing,
 			float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
@@ -55,7 +66,7 @@ public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
 		ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
 		ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
 		this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
-		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.entityTranslucent(TEXTURE), stack.hasFoil());
+		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.entityTranslucent(resolveTexture(stack)), stack.hasFoil());
 		this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
 	}
 }
