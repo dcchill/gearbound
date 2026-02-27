@@ -8,21 +8,21 @@ import net.gearbound.client.renderer.BrownBrassBackpackCuriosRenderer;
 
 public class GearboundModCuriosRenderers {
 	public static void registerRenderers(FMLClientSetupEvent event) {
-		CuriosRendererRegistry.register(GearboundModItems.WHITE_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.LIGHT_GRAY_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.GRAY_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.BLACK_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.WHITE_BRASS_BACKPACK_ITEM.get(), WhiteBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.LIGHT_GRAY_BRASS_BACKPACK_ITEM.get(), LightGrayBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.GRAY_BRASS_BACKPACK_ITEM.get(), GrayBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.BLACK_BRASS_BACKPACK_ITEM.get(), BlackBrassBackpackCuriosRenderer::new);
 		CuriosRendererRegistry.register(GearboundModItems.BROWN_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.RED_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.ORANGE_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.YELLOW_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.LIME_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.GREEN_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.CYAN_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.LIGHT_BLUE_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.BLUE_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.PURPLE_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.MAGENTA_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
-		CuriosRendererRegistry.register(GearboundModItems.PINK_BRASS_BACKPACK_ITEM.get(), BrownBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.RED_BRASS_BACKPACK_ITEM.get(), RedBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.ORANGE_BRASS_BACKPACK_ITEM.get(), OrangeBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.YELLOW_BRASS_BACKPACK_ITEM.get(), YellowBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.LIME_BRASS_BACKPACK_ITEM.get(), LimeBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.GREEN_BRASS_BACKPACK_ITEM.get(), GreenBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.CYAN_BRASS_BACKPACK_ITEM.get(), CyanBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.LIGHT_BLUE_BRASS_BACKPACK_ITEM.get(), LightBlueBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.BLUE_BRASS_BACKPACK_ITEM.get(), BlueBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.PURPLE_BRASS_BACKPACK_ITEM.get(), PurpleBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.MAGENTA_BRASS_BACKPACK_ITEM.get(), MagentaBrassBackpackCuriosRenderer::new);
+		CuriosRendererRegistry.register(GearboundModItems.PINK_BRASS_BACKPACK_ITEM.get(), PinkBrassBackpackCuriosRenderer::new);
 	}
 }
