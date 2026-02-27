@@ -3,7 +3,7 @@
     {
       "name": "BrownBrassBackpack",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "brown_brass_backpack",
       "metadata": {
