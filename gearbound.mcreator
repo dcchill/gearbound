@@ -1,0 +1,105 @@
+{
+  "mod_elements": [
+    {
+      "name": "BrownBrassBackpack",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_brass_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/block/entity/BrownBrassBackpackBlockEntity.java",
+          "src/main/resources/assets/gearbound/models/item/brown_brass_backpack.json",
+          "src/main/resources/assets/gearbound/models/block/brown_brass_backpack.json",
+          "src/main/resources/assets/gearbound/blockstates/brown_brass_backpack.json",
+          "src/main/java/net/gearbound/block/BrownBrassBackpackBlock.java",
+          "src/main/resources/data/gearbound/loot_table/blocks/brown_brass_backpack.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "CreateGearboundMenu",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_gearbound_menu",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BrassBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brass_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/gui/BrassBackpackGUIScreen.java",
+          "src/main/java/net/gearbound/world/inventory/BrassBackpackGUIMenu.java"
+        ]
+      },
+      "path": "~/brass backpacks"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:backpacks": [
+      "CUSTOM:BrownBrassBackpack"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.gearbound.brown_brass_backpack": "Brown Brass Backpack",
+      "item_group.gearbound.create_gearbound_menu": "Create: Gearbound",
+      "block.gearbound.brown_brass_backpack": "Brown Brass Backpack",
+      "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/gearbound/init/GearboundModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/gearbound/init/GearboundModModels.java",
+      "src/main/java/net/gearbound/GearboundMod.java",
+      "src/main/java/net/gearbound/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/gearbound/init/GearboundModScreens.java",
+      "src/main/java/net/gearbound/init/GearboundModMenus.java",
+      "src/main/java/net/gearbound/init/GearboundModBlocks.java",
+      "src/main/java/net/gearbound/init/GearboundModBlockEntities.java",
+      "src/main/java/net/gearbound/init/GearboundModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "brass backpacks",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "gearbound",
+    "modName": "Gearbound",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.gearbound"
+  },
+  "mcreatorVersion": 202500228610
+}
