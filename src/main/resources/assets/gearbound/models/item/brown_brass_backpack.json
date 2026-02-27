@@ -18,5 +18,10 @@
         0.375
       ]
     }
+  },
+  "textures": {
+    "all": "gearbound:block/backpack_texture",
+    "particle": "gearbound:block/backpack_texture",
+    "0": "gearbound:block/backpack_texture"
   }
 }
