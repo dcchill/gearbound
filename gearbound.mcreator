@@ -41,6 +41,33 @@
         ]
       },
       "path": "~/brass backpacks"
+    },
+    {
+      "name": "BrownBrassBackpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_brass_backpack_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/item/BrownBrassBackpackItemItem.java",
+          "src/main/resources/assets/gearbound/models/item/brown_brass_backpack_item.json"
+        ]
+      },
+      "path": "~/brass backpacks"
+    },
+    {
+      "name": "BrownBrassBackpackCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_brass_backpack_curios",
+      "metadata": {
+        "files": [
+          "src/main/java/net/gearbound/client/renderer/BrownBrassBackpackCuriosRenderer.java"
+        ]
+      },
+      "path": "~/brass backpacks"
     }
   ],
   "variable_elements": [],
@@ -56,7 +83,8 @@
       "item.gearbound.brown_brass_backpack": "Brown Brass Backpack",
       "item_group.gearbound.create_gearbound_menu": "Create: Gearbound",
       "block.gearbound.brown_brass_backpack": "Brown Brass Backpack",
-      "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack"
+      "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack",
+      "item.gearbound.brown_brass_backpack_item": "Brown Brass Backpack Item"
     }
   },
   "metadata": {
@@ -66,6 +94,11 @@
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/gearbound/init/GearboundModModels.java",
       "src/main/java/net/gearbound/GearboundMod.java",
+      "src/main/resources/data/gearbound/curios/slots/back.json",
+      "src/main/resources/data/gearbound/curios/entities/slots.json",
+      "src/main/java/net/gearbound/init/GearboundModCuriosRenderers.java",
+      "src/main/java/net/gearbound/init/GearboundModCuriosCompat.java",
+      "src/main/resources/data/curios/tags/item/back.json",
       "src/main/java/net/gearbound/network/MenuStateUpdateMessage.java",
       "src/main/java/net/gearbound/init/GearboundModScreens.java",
       "src/main/java/net/gearbound/init/GearboundModMenus.java",

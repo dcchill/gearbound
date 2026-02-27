@@ -2,5 +2,6 @@
   "item.gearbound.brown_brass_backpack": "Brown Brass Backpack",
   "item_group.gearbound.create_gearbound_menu": "Create: Gearbound",
   "block.gearbound.brown_brass_backpack": "Brown Brass Backpack",
-  "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack"
+  "gui.gearbound.brass_backpack_gui.label_brass_backpack": "Brass Backpack",
+  "item.gearbound.brown_brass_backpack_item": "Brown Brass Backpack Item"
 }

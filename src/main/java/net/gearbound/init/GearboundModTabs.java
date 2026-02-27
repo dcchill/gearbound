@@ -18,5 +18,6 @@ public class GearboundModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATE_GEARBOUND_MENU = REGISTRY.register("create_gearbound_menu",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.gearbound.create_gearbound_menu")).icon(() -> new ItemStack(GearboundModBlocks.BROWN_BRASS_BACKPACK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(GearboundModBlocks.BROWN_BRASS_BACKPACK.get().asItem());
+				tabData.accept(GearboundModItems.BROWN_BRASS_BACKPACK_ITEM.get());
 			}).build());
 }

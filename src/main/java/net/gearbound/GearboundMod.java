@@ -28,6 +28,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.gearbound.init.GearboundModTabs;
 import net.gearbound.init.GearboundModMenus;
 import net.gearbound.init.GearboundModItems;
+import net.gearbound.init.GearboundModCuriosRenderers;
+import net.gearbound.init.GearboundModCuriosCompat;
 import net.gearbound.init.GearboundModBlocks;
 import net.gearbound.init.GearboundModBlockEntities;
 import net.gearbound.event.BackpackItemUseHandler;
@@ -50,6 +52,10 @@ public class GearboundMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		if (ModList.get().isLoaded("curios")) {
+			modEventBus.addListener(GearboundModCuriosCompat::registerCapabilities);
+			modEventBus.addListener(GearboundModCuriosRenderers::registerRenderers);
+		}
 		GearboundModBlocks.REGISTRY.register(modEventBus);
 		GearboundModBlockEntities.REGISTRY.register(modEventBus);
 		GearboundModItems.REGISTRY.register(modEventBus);
