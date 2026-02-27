@@ -1,6 +1,7 @@
 package net.gearbound.block.entity;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -28,9 +29,13 @@ import io.netty.buffer.Unpooled;
 public class BrownBrassBackpackBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(36, ItemStack.EMPTY);
 
-		public BrownBrassBackpackBlockEntity(BlockPos position, BlockState state) {
-		    super(GearboundModBlockEntities.BROWN_BRASS_BACKPACK.get(), position, state);
-		}
+	public BrownBrassBackpackBlockEntity(BlockPos position, BlockState state) {
+		this(GearboundModBlockEntities.BROWN_BRASS_BACKPACK.get(), position, state);
+	}
+
+	public BrownBrassBackpackBlockEntity(BlockEntityType<?> type, BlockPos position, BlockState state) {
+		super(type, position, state);
+	}
 
 	@Override
 	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
