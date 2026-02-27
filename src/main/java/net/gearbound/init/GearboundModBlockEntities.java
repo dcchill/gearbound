@@ -22,18 +22,12 @@ import net.gearbound.GearboundMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class GearboundModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, GearboundMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BROWN_BRASS_BACKPACK = register("brown_brass_backpack", BrownBrassBackpackBlockEntity::new, GearboundModBlocks.WHITE_BRASS_BACKPACK,
-			GearboundModBlocks.ORANGE_BRASS_BACKPACK, GearboundModBlocks.MAGENTA_BRASS_BACKPACK, GearboundModBlocks.LIGHT_BLUE_BRASS_BACKPACK, GearboundModBlocks.YELLOW_BRASS_BACKPACK,
-			GearboundModBlocks.LIME_BRASS_BACKPACK, GearboundModBlocks.PINK_BRASS_BACKPACK, GearboundModBlocks.GRAY_BRASS_BACKPACK, GearboundModBlocks.LIGHT_GRAY_BRASS_BACKPACK,
-			GearboundModBlocks.CYAN_BRASS_BACKPACK, GearboundModBlocks.PURPLE_BRASS_BACKPACK, GearboundModBlocks.BLUE_BRASS_BACKPACK, GearboundModBlocks.BROWN_BRASS_BACKPACK,
-			GearboundModBlocks.GREEN_BRASS_BACKPACK, GearboundModBlocks.RED_BRASS_BACKPACK, GearboundModBlocks.BLACK_BRASS_BACKPACK);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BROWN_BRASS_BACKPACK = register("brown_brass_backpack", GearboundModBlocks.BROWN_BRASS_BACKPACK, BrownBrassBackpackBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
-
-	@SafeVarargs
-	private static DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> register(String registryname, BlockEntityType.BlockEntitySupplier<?> supplier, DeferredHolder<Block, Block>... blocks) {
-		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, java.util.Arrays.stream(blocks).map(DeferredHolder::get).toArray(Block[]::new)).build(null));
+	private static DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
+		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}
 
 	@SubscribeEvent
