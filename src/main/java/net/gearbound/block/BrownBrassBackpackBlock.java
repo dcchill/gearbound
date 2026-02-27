@@ -29,6 +29,21 @@ import net.minecraft.world.item.Items;
 import javax.annotation.Nullable;
 
 import net.gearbound.block.entity.BrownBrassBackpackBlockEntity;
+import net.gearbound.block.entity.WhiteBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LightGrayBrassBackpackBlockEntity;
+import net.gearbound.block.entity.GrayBrassBackpackBlockEntity;
+import net.gearbound.block.entity.BlackBrassBackpackBlockEntity;
+import net.gearbound.block.entity.RedBrassBackpackBlockEntity;
+import net.gearbound.block.entity.OrangeBrassBackpackBlockEntity;
+import net.gearbound.block.entity.YellowBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LimeBrassBackpackBlockEntity;
+import net.gearbound.block.entity.GreenBrassBackpackBlockEntity;
+import net.gearbound.block.entity.CyanBrassBackpackBlockEntity;
+import net.gearbound.block.entity.LightBlueBrassBackpackBlockEntity;
+import net.gearbound.block.entity.BlueBrassBackpackBlockEntity;
+import net.gearbound.block.entity.PurpleBrassBackpackBlockEntity;
+import net.gearbound.block.entity.MagentaBrassBackpackBlockEntity;
+import net.gearbound.block.entity.PinkBrassBackpackBlockEntity;
 
 public class BrownBrassBackpackBlock extends Block implements EntityBlock {
 	public BrownBrassBackpackBlock() {
@@ -53,7 +68,28 @@ public class BrownBrassBackpackBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new BrownBrassBackpackBlockEntity(pos, state);
+		ResourceLocation blockId = BuiltInRegistries.BLOCK.getKey(state.getBlock());
+		if (blockId == null)
+			return new BrownBrassBackpackBlockEntity(pos, state);
+
+		return switch (blockId.getPath()) {
+			case "white_brass_backpack" -> new WhiteBrassBackpackBlockEntity(pos, state);
+			case "light_gray_brass_backpack" -> new LightGrayBrassBackpackBlockEntity(pos, state);
+			case "gray_brass_backpack" -> new GrayBrassBackpackBlockEntity(pos, state);
+			case "black_brass_backpack" -> new BlackBrassBackpackBlockEntity(pos, state);
+			case "red_brass_backpack" -> new RedBrassBackpackBlockEntity(pos, state);
+			case "orange_brass_backpack" -> new OrangeBrassBackpackBlockEntity(pos, state);
+			case "yellow_brass_backpack" -> new YellowBrassBackpackBlockEntity(pos, state);
+			case "lime_brass_backpack" -> new LimeBrassBackpackBlockEntity(pos, state);
+			case "green_brass_backpack" -> new GreenBrassBackpackBlockEntity(pos, state);
+			case "cyan_brass_backpack" -> new CyanBrassBackpackBlockEntity(pos, state);
+			case "light_blue_brass_backpack" -> new LightBlueBrassBackpackBlockEntity(pos, state);
+			case "blue_brass_backpack" -> new BlueBrassBackpackBlockEntity(pos, state);
+			case "purple_brass_backpack" -> new PurpleBrassBackpackBlockEntity(pos, state);
+			case "magenta_brass_backpack" -> new MagentaBrassBackpackBlockEntity(pos, state);
+			case "pink_brass_backpack" -> new PinkBrassBackpackBlockEntity(pos, state);
+			default -> new BrownBrassBackpackBlockEntity(pos, state);
+		};
 	}
 
 	@Override
