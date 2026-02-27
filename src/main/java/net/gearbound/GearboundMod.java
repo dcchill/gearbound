@@ -54,11 +54,15 @@ public class GearboundMod {
 			modEventBus.addListener(GearboundModCuriosCompat::registerCapabilities);
 			modEventBus.addListener(GearboundModCuriosRenderers::registerRenderers);
 		}
+
 		GearboundModBlocks.REGISTRY.register(modEventBus);
 		GearboundModBlockEntities.REGISTRY.register(modEventBus);
 		GearboundModItems.REGISTRY.register(modEventBus);
+
 		GearboundModTabs.REGISTRY.register(modEventBus);
+
 		GearboundModMenus.REGISTRY.register(modEventBus);
+
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

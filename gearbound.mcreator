@@ -46,7 +46,7 @@
       "name": "BrownBrassBackpackItem",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "brown_brass_backpack_item",
       "metadata": {
         "files": [
@@ -59,8 +59,8 @@
     {
       "name": "BrownBrassBackpackCurios",
       "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
+      "compiles": false,
+      "locked_code": true,
       "registry_name": "brown_brass_backpack_curios",
       "metadata": {
         "files": [
