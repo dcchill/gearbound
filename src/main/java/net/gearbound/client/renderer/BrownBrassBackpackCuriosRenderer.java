@@ -25,10 +25,11 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = ResourceLocation.parse("gearbound:textures/entities/backpack_e_texture.png");
+	private final ResourceLocation texture;
 	private final HumanoidModel<LivingEntity> humanoidModel;
 
-	public BrownBrassBackpackCuriosRenderer() {
+	public BrownBrassBackpackCuriosRenderer(String texturePath) {
+		this.texture = ResourceLocation.parse(texturePath);
 		ModelPart bakedRoot = Minecraft.getInstance().getEntityModels().bakeLayer(Modelbackpack.LAYER_LOCATION);
 		ModelPart backpackBody = resolveBackpackBody(bakedRoot);
 
@@ -55,7 +56,7 @@ public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
 		ICurioRenderer.followHeadRotations(entity, this.humanoidModel.head);
 		ICurioRenderer.followBodyRotations(entity, this.humanoidModel);
 		this.humanoidModel.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
-		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.entityTranslucent(TEXTURE), stack.hasFoil());
+		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.entityTranslucent(texture), stack.hasFoil());
 		this.humanoidModel.renderToBuffer(matrixStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY);
 	}
 }

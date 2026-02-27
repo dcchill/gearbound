@@ -1,0 +1,9 @@
+{
+  "parent": "gearbound:custom/backpack",
+  "textures": {
+    "all": "minecraft:white_wool",
+    "particle": "minecraft:white_wool",
+    "0": "gearbound:block/white_backpack_texture"
+  },
+  "render_type": "solid"
+}

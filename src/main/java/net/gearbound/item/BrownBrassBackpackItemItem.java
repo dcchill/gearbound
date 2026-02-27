@@ -14,15 +14,18 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 
 import io.netty.buffer.Unpooled;
 
-import net.gearbound.init.GearboundModBlocks;
 import net.gearbound.world.inventory.BrassBackpackGUIMenu;
 
 public class BrownBrassBackpackItemItem extends BlockItem {
-	public BrownBrassBackpackItemItem() {
-		super(GearboundModBlocks.BROWN_BRASS_BACKPACK.get(), new Properties().stacksTo(1));
+	private final String displayName;
+
+	public BrownBrassBackpackItemItem(Block block, String displayName) {
+		super(block, new Properties().stacksTo(1));
+		this.displayName = displayName;
 	}
 
 	@Override
@@ -36,7 +39,7 @@ public class BrownBrassBackpackItemItem extends BlockItem {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Brown Brass Backpack");
+					return Component.literal(displayName);
 				}
 
 				@Override
