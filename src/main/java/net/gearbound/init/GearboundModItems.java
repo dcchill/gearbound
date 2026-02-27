@@ -1,6 +1,6 @@
 /*
- *    MCreator note: This file will be REGENERATED on each build.
- */
+*    MCreator note: This file will be REGENERATED on each build.
+*/
 package net.gearbound.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -18,7 +18,6 @@ public class GearboundModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(GearboundMod.MODID);
 	public static final DeferredItem<Item> BROWN_BRASS_BACKPACK = block(GearboundModBlocks.BROWN_BRASS_BACKPACK);
 	public static final DeferredItem<Item> BROWN_BRASS_BACKPACK_ITEM = REGISTRY.register("brown_brass_backpack_item", BrownBrassBackpackItemItem::new);
-
 	// Start of user code block custom items
 	public static final DeferredItem<Item> WHITE_BRASS_BACKPACK = block(GearboundModBlocks.WHITE_BRASS_BACKPACK);
 	public static final DeferredItem<Item> LIGHT_GRAY_BRASS_BACKPACK = block(GearboundModBlocks.LIGHT_GRAY_BRASS_BACKPACK);
@@ -50,6 +49,7 @@ public class GearboundModItems {
 	public static final DeferredItem<Item> PURPLE_BRASS_BACKPACK_ITEM = REGISTRY.register("purple_brass_backpack_item", () -> new BrownBrassBackpackItemItem(GearboundModBlocks.PURPLE_BRASS_BACKPACK, "Purple Brass Backpack"));
 	public static final DeferredItem<Item> MAGENTA_BRASS_BACKPACK_ITEM = REGISTRY.register("magenta_brass_backpack_item", () -> new BrownBrassBackpackItemItem(GearboundModBlocks.MAGENTA_BRASS_BACKPACK, "Magenta Brass Backpack"));
 	public static final DeferredItem<Item> PINK_BRASS_BACKPACK_ITEM = REGISTRY.register("pink_brass_backpack_item", () -> new BrownBrassBackpackItemItem(GearboundModBlocks.PINK_BRASS_BACKPACK, "Pink Brass Backpack"));
+
 	// End of user code block custom items
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
