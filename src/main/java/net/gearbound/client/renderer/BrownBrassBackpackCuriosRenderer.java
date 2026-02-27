@@ -26,7 +26,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BrownBrassBackpackCuriosRenderer implements ICurioRenderer {
 	private static final ResourceLocation TEXTURE = ResourceLocation.parse("gearbound:textures/entities/backpack_e_texture.png");
-	private final HumanoidModel<?> humanoidModel;
+	private final HumanoidModel<LivingEntity> humanoidModel;
 
 	public BrownBrassBackpackCuriosRenderer() {
 		ModelPart bakedRoot = Minecraft.getInstance().getEntityModels().bakeLayer(Modelbackpack.LAYER_LOCATION);

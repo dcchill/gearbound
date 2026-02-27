@@ -3,7 +3,7 @@
     {
       "name": "BrownBrassBackpack",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "brown_brass_backpack",
       "metadata": {
@@ -59,7 +59,7 @@
     {
       "name": "BrownBrassBackpackCurios",
       "type": "curiosbauble",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "brown_brass_backpack_curios",
       "metadata": {
